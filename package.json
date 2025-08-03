@@ -1,1 +1,20 @@
-
+{
+  "name": "cbt-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.0",
+    "@stripe/stripe-js": "^1.16.0",
+    "tailwindcss": "^2.2.19",
+    "postcss": "^8.3.6",
+    "autoprefixer": "^10.3.1"
+  },
+  "devDependencies": {
+    "react-scripts": "^4.0.3"
+  }
+}
