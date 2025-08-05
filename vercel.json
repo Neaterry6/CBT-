@@ -3,18 +3,17 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["backend/**"] }
+      "use": "@vercel/static-build"
     },
     {
-      "src": "public/**",
-      "use": "@vercel/static"
+      "src": "backhend/index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/backend/index.js"
+      "dest": "/backhend/index.js"
     },
     {
       "src": "/(.*)",
